@@ -5,10 +5,10 @@ on:
       - main
 jobs:
   build:
-    runs-on: ubuntu-lastst
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout source code.
-        uses: actions/checkout@main
+      - name: checkout source code
+        uses: actions/checkout@v2
 
       - name: Install Dependencies
         run: npm install
