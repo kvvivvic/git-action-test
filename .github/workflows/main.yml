@@ -1,13 +1,11 @@
-name: my workflow
-on: [push]
-
+name: Our Workflow
+on: push
 jobs:
-  build:
-    name: hello github action
+  checkout:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout sourse code
-        uses: actions/checkout@main
-
-      - name: ls -al
-        uses: ls -al
+      - uses: actions/checkout@v3
+        with:
+          path: our-source
+      - run: ls -al
+      - run: ls -al our-source
