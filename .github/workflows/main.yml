@@ -9,5 +9,5 @@ jobs:
       - name: checkout sourse code
         uses: actions/checkout@main
 
-      - name: echo hello
-        uses: echo "hello"
+      - name: ls -al
+        uses: ls -al
